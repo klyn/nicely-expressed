@@ -1,9 +1,10 @@
 export type Input =
     | Array<any>
-    | Map<any, any>
-    | WeakMap<any, any>
-    | Set<any>
-    | WeakSet<any>;
+    // TODO
+    // | Map<any, any>
+    // | WeakMap<any, any>
+    // | Set<any>
+    // | WeakSet<any>;
 
 export type Output = Input;
 
