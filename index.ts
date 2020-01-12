@@ -1,4 +1,6 @@
-import { constructor } from './lib/constructor';
+import {
+    constructor, forEachConstructor,
+} from './lib/constructor';
 
 // Note: This is the public API of the library.
 // Do NOT expose any other methods besides the 'constructor' method through
@@ -6,6 +8,7 @@ import { constructor } from './lib/constructor';
 
 export const from = constructor;
 export const all = constructor;
+export const every = forEachConstructor;
 
 // Utility functions
-export * from './lib/utilities';
+export * from './lib/functional-helpers';

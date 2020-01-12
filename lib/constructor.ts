@@ -1,10 +1,11 @@
 import {
     Input,
-    ConstructorOutput,
+    ConstructorOutput, ForEachConstructorOutput,
 } from './types';
 
 import { filter } from './filter';
 import { select } from './select';
+import { callback, callbackFnArgs } from './callback';
 
 /**
  * All new queries should start with calling this function -- strictly
@@ -23,5 +24,12 @@ export function constructor (set: Input) : ConstructorOutput {
         pick: select(set),
         get: select(set),
         choose: select(set),
+        should: (cb: callbackFnArgs) => callback(set, cb),
+    }
+}
+
+export function forEachConstructor (callback: Function) : ForEachConstructorOutput {
+    return {
+        in: constructor,
     }
 }
