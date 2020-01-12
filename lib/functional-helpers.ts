@@ -15,11 +15,14 @@ function returnTheSame <T> (x: T) : T {
 
 export const everything = returnTheSame;
 export const everyone = returnTheSame;
+export const one = returnTheSame;
+export const thing = returnTheSame;
+export const body = returnTheSame;
 
 /**
  * Returns the first N-th items of an array. If the array is empty, an empty array
  * will be returned.
- *  
+ * 
  * @param x An array of any type.
  * @param nth The number of elements to be returned from index 0.
  * @returns The first N-th items of the array or an empty array.
