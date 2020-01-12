@@ -10,6 +10,7 @@
   "devDependencies": {
     "@types/chai": "^4.2.7",
     "@types/mocha": "^5.2.7",
+    "@types/lodash": "^4.14.149",
     "chai": "^4.2.0",
     "mocha": "^6.2.2",
     "ts-node": "^8.5.4",
@@ -24,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/klyn/nicely-expressed/issues"
   },
-  "homepage": "https://github.com/klyn/nicely-expressed#readme"
+  "homepage": "https://github.com/klyn/nicely-expressed#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
 }

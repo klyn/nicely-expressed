@@ -2,6 +2,8 @@
     "compilerOptions": {
       "target": "es6",
       "removeComments": true,
-      "lib": ["es6", "DOM"]
+      "lib": ["es6", "DOM"],
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true
     }
 }
